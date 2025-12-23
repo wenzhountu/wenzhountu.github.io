@@ -1,21 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+    <meta name="description" content="wen research lab ntu" />
+    <meta name="author" content="zhennan" />
     <title>Wen Research Group</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    
+    <!-- Font Awesome -->
     <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet"
-        type="text/css" />
-    <link
-        href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
-        rel="stylesheet" type="text/css" />
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+    
+    <!-- Main stylesheet -->
     <link href="css/styles.css" rel="stylesheet" />
+
+    <!-- Custom CSS Variables and Styles -->
     <style>
+        /* Define the custom deep blue color variable */
+        :root {
+            --custom-blue:  rgba(51, 57, 91, 0.9);
+        }
+
+        /* 1. Force the Footer Background */
+        .bg-custom-blue {
+            background-color: var(--custom-blue) !important;
+        }
+
+        /* 2. Custom Text Color Class */
+        .text-custom-blue {
+            color: var(--custom-blue) !important;
+        }
+
+        /* 3. Link hover states for custom blue links */
+        a.text-custom-blue:hover {
+            color: #1a1e6e !important; /* Slightly darker on hover */
+        }
+
+        /* Layout and Typography Styles */
         .section-title {
             font-size: 1.75rem;
             font-weight: 600;
@@ -87,7 +112,7 @@
         }
 
         .social-links a {
-            color: #28a745;
+            color: #181C62;
             text-decoration: none;
         }
 
@@ -117,47 +142,38 @@
 </head>
 
 <body>
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
-        <div class="container px-4 px-lg-5">
-            <a class="navbar-brand" href="index.html">
-                <h4>Wen Research Group</h4>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                Menu
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto py-4 py-lg-0">
-                    <li class="nav-item"><a class="nav-link px-lg-2 py-3 py-lg-4" href="index.html">
-                            <h6>Home</h6>
-                        </a></li>
-                    <li class="nav-item"><a class="nav-link px-lg-2 py-3 py-lg-4" href="research.html">
-                            <h6>Research</h6>
-                        </a></li>
-                    <li class="nav-item"><a class="nav-link px-lg-2 py-3 py-lg-4" href="people.html">
-                            <h6>People</h6>
-                        </a></li>
-                    <li class="nav-item"><a class="nav-link px-lg-2 py-3 py-lg-4" href="teaching.html">
-                            <h6>Teaching</h6>
-                        </a></li>
-                    <li class="nav-item"><a class="nav-link px-lg-2 py-3 py-lg-4" href="contact.html">
-                            <h6>Contact</h6>
-                        </a></li>
-                    <li class="nav-item"><a class="nav-link px-lg-2 py-3 py-lg-4" href="positions.html">
-                            <h6>Positions</h6>
-                        </a></li>
-                    <li class="nav-item"><a class="nav-link px-lg-2 py-3 py-lg-4" href="news.html">
-                            <h6>News</h6>
-                        </a></li>
-                </ul>
-            </div>
+  <div class="site-wrapper">
+    <nav class="navbar navbar-expand-lg navbar-dark" id="mainNav">
+      <div class="container px-4 px-lg-5">
+        <!-- Brand with logo and text -->
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img src="assets/img/pages-img/wlab-icon.png" alt="Lab Logo" height="32" class="me-3">
+          <span class="fw-bold" style="font-size: 1.25rem;">  MatXCon Lab</span>
+        </a>
+
+        <!-- Toggler -->
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Nav links -->
+        <div class="collapse navbar-collapse text-end" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto w-100 justify-content-end">
+            <li class="nav-item"><a class="nav-link text-white" href="index.html" style="font-size: 1rem;">Home</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="research.html" style="font-size: 1rem;">Research</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="publications.html" style="font-size: 1rem;">Publications</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="people.html" style="font-size: 1rem;">People</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="news.html" style="font-size: 1rem;">News</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="contact.html" style="font-size: 1rem;">Contact</a></li>
+          </ul>
         </div>
+      </div>
     </nav>
 
     <!-- Page Header-->
-    <header class="masthead" style="background-image: url('assets/img/pages-img/cee-building.jpg')">
+    <header class="masthead" style="background-image: url('assets/img/pages-img/background2.png')">
         <div class="container position-relative px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 justify-content-left">
                 <div class="col-md-10 col-lg-8 col-xl-7">
@@ -184,56 +200,68 @@
                     <h3 style="margin-bottom: 1rem;">Wen Zhou (周文)</h3>
 
                     <p>Dr. Wen Zhou is an Assistant Professor in the School of Civil and Environmental Engineering at
-                        Nanyang Technological University. She received her bachelor's (2017) and master's (2020) degrees
-                        from Tsinghua University, and her PhD in Civil Engineering (2023) from the University of
-                        Michigan, Ann Arbor. Following her doctoral studies, she worked as a postdoctoral researcher at
-                        Delft University of Technology (2023-2025).</p>
+                        Nanyang Technological University. She works at the intersection of multiscale materials research, intentional design, 
+                        and construction technologies, aiming to enable efficient, resilient, and sustainable pathways towards next-generation 
+                        construction.</p>
+
 
                     <div class="social-links">
-                        <a href="https://scholar.google.com.au/citations?user=yhweFWsAAAAJ&hl">Google Scholar</a> |
-                        <a href="https://orcid.org/0000-0001-5091-0289">ORCID</a> |
-                        <a href="https://www.researchgate.net/profile/Manman-Hu">ResearchGate</a> |
-                        <a href="https://au.linkedin.com/in/Man-manhu">LinkedIn</a> |
-                        <a href="https://www.civil.hku.hk/pp-humm.html">Department Profile</a><br>
-                        Email: <span style="color: #28a745;">mmhu[at]hku.hk</span>
+                        <a href="https://scholar.google.com/citations?user=TwTSgYUAAAAJ&hl=zh-CN&oi=sra">Google Scholar</a> |
+                        <a href="https://orcid.org/0000-0003-2344-7895">ORCID</a> |
+                        <a href="https://www.researchgate.net/profile/Wen-Zhou-76">ResearchGate</a> |
+                        <a href="https://www.linkedin.com/in/wen-zhou-70276a12a/?originalSubdomain=nl">LinkedIn</a> |
+                        <a href="https://dr.ntu.edu.sg/entities/person/Wen-Zhou">Department Profile</a><br>
+                        Email: <span style="color:rgb(0, 84, 166);">wen.zhou[at]ntu.edu.sg</span>
                     </div>
                 </div>
             </div>
 
             <div style="margin-top: 2rem;">
+                <h5 class="subsection-title">Research Interests</h5>
+                <ul style="margin-bottom: 2rem;">
+                    <li>Digital manufacturing strategies for construction</li>
+                    <li>Additive manufacturing of concrete and composites</li>
+                    <li>Architected materials/structures</li>
+                    <li>Data-driven design and optimization approaches</li>
+                    <li>Sustainable construction materials</li>
+                </ul>
+
+                <h5 class="subsection-title">Work Experiences</h5>
+                <ul style="margin-bottom: 1rem;">
+                    <li>2025-present: Assistant Professor, Nanyang Technological University, Singapore</li>
+                    <li>2013-2025: Postdoctoral Researcher, Delft University of Technology, Delft</li>
+                </ul>
+
                 <h5 class="subsection-title">Education</h5>
                 <ul style="margin-bottom: 1rem;">
-                    <li>2020-2023: PhD, Civil Engineering, University of Michigan, Ann Arbor</li>
+                    <li>2020-2023: Ph.D., Civil Engineering, University of Michigan, Ann Arbor</li>
                     <li>2017-2020: M.Sc., Civil Engineering, Tsinghua University, Beijing</li>
                     <li>2013-2017: B.Eng., Civil Engineering, Tsinghua University, Beijing</li>
                 </ul>
 
-                <h5 class="subsection-title">Research Interests</h5>
+                <h5 class="subsection-title">Awards and Recognition</h5>
                 <ul style="margin-bottom: 2rem;">
-                    <li>Environmental Geomechanics</li>
-                    <li>Energy Geomechanics</li>
-                    <li>Multi-scale Multi-physics Instabilities in Geomaterials</li>
-                    <li>Pattern Forming Instabilities</li>
-                    <li>Geological CO2 Sequestration</li>
-                    <li>Deep/Shallow Geothermal Energy</li>
+                    <li>NWO Open Mind Award, Dutch Research Council, 2025</li>
+                    <li>Rackham Fellowship/ Barbour Scholar, University of Michigan, 2023</li>
+                    <li>Award of Outstanding Graduate Thesis, Tsinghua University, 2020</li>
+                    <li>Award of Outstanding Undergraduate Thesis, Tsinghua University, 2017</li>
                 </ul>
             </div>
 
             <!-- Postgraduate Students -->
-            <h2 class="section-title">Postgraduate Students</h2>
+            <h2 class="section-title">Group Members</h2>
 
             <div class="member-item">
                 <div class="member-photo">
-                    <img src="assets/img/members-img/znzhu.jpeg" alt="moumou" />
+                    <img src="assets/img/members-img/momo.jpg" alt="momo" />
                 </div>
                 <div class="member-info">
-                    <h4>moumou</h4>
-                    <p>Final Year Fellowship (2019-present)<br>
-                        M.Sc. in Hydraulic Engineering, Hohai University</p>
+                    <h4>momo</h4>
+                    <p>PhD Student</p>
                     <div class="social-links">
-                        <a href="https://scholar.google.com/citations?authuser=1&user=xqZWcYcAAAAJ">Google Scholar</a> |
-                        <a href="https://www.researchgate.net/profile/Chong-Liu-20">ResearchGate</a><br>
-                        Email: <span style="color: #28a745;">chongliu[at]connect.hku.hk</span>
+                        <!-- <a href="https://scholar.google.com/citations?authuser=1&user=xqZWcYcAAAAJ">Google Scholar</a> | -->
+                        <!-- <a href="https://www.researchgate.net/profile/Chong-Liu-20">ResearchGate</a><br> -->
+                        Email: <span style="color:rgb(0, 84, 166);">momo[at]ntu.edu.sg</span>
                     </div>
                 </div>
             </div>
@@ -243,116 +271,69 @@
 
             <div class="member-item">
                 <div class="member-photo">
-                    <img src="assets/img/members-img/znzhu.jpeg" alt="Kaixuan Qiu" />
+                    <img src="assets/img/members-img/momo.jpg" alt="momo" />
                 </div>
                 <div class="member-info">
-                    <h4>Kaixuan Qiu (邱凯旋)</h4>
-                    <p>Research Fellow (2022-present), Laboratory of Carbon Science and Technology<br>
-                        Research topic: storage mechanism and migration pattern for CO<sub>2</sub> sequestration</p>
+                    <h4>momo</h4>
+                    <p>Visiting Researcher</p>
                     <div class="social-links">
-                        <a href="https://www.researchgate.net/profile/Kaixuan-Qiu">ResearchGate</a><br>
-                        Email: <span style="color: #28a745;">qkx1994[at]hku.hk</span>
+                        <!-- <a href="https://www.researchgate.net/profile/Kaixuan-Qiu">ResearchGate</a><br> -->
+                        Email: <span style="color:rgb(0, 84, 166);">momo[at]ntu.edu.sg</span>
                     </div>
                 </div>
             </div>
 
             <!-- Alumni -->
-            <h2 class="section-title">Alumni</h2>
+            <!-- <h2 class="section-title">Alumni</h2>
 
             <div class="member-item">
                 <div class="member-photo">
-                    <img src="assets/img/pages-img/ntu-logo.jpg" alt="Xiaojie Tang" />
+                    <img src="assets/img/members-img/momo.jpg" alt="momo" />
                 </div>
                 <div class="member-info">
-                    <h4>Xiaojie Tang (唐晓杰)</h4>
-                    <p>Ph.D. (2019-2023)<br>
-                        Assistant Professor (2023-present), Nanjing University of Aeronautics and Astronautics<br>
-                        Research topic: (bio)chemo-hydro-mechanical framework for enhanced cracking in geomaterials</p>
+                    <h4>momo</h4>
+                    <p>Ph.D. (2025-2025)<br>
+                        Assistant Professor (2025-present), Momo University<br>
+                        Research topic: topological design of meta materials</p>
                     <div class="social-links">
-                        <a href="https://www.researchgate.net/profile/Xiaojie-Tang-2">ResearchGate</a><br>
-                        Email: <span style="color: #28a745;">xjtang[at]connect.hku.hk</span>
+                        <a href="https://www.researchgate.net/profile/Xiaojie-Tang-2">ResearchGate</a><br> -->
+                        <!-- Email: <span style="color:rgb(0, 84, 166);">momo[at]ntu.edu.sg</span>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
-            <div class="member-item">
+            <!-- <div class="member-item">
                 <div class="member-info">
-                    <h4>Yutian Shen</h4>
-                    <p>M.Sc. (2021-2022)</p>
+                    <h4>Momo</h4>
+                    <p>M.Sc. (2025-2026)</p>
                 </div>
-            </div>
+            </div> -->
 
         </div>
     </main>
 
-    <!-- Footer-->
-    <footer>
-        <div class="container-fluid px-5 px-lg-6 bg-success">
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-lg-1 px-sm-2 text-center">
-                    <br>
-                    <img class="img-fluid" src="assets/img/pages-img/ntu-logo.jpg" alt="NTU Logo" />
-                </div>
-                <div class="small col-lg-3 px-sm-2">
-                    <p class="left-align">
-                        <font style="color:var(--bs-white)">
-                            Dr. Wen Zhou<br />
-                            Assistant Professor, School of Civil and Environmental Engineering, <br />
-                            College of Engineering, <br />
-                            Nanyang Technological University
-                        </font>
-                    </p>
-                </div>
-                <div class="col-lg-4 px-sm-0">
-                    <br />
-                    <ul class="list-inline text-center">
-                        <li class="list-inline-item">
-                            <a href="#!">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fas fa-circle fa-stack-2x"></i>
-                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#!">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fas fa-circle fa-stack-2x"></i>
-                                    <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#!">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fas fa-circle fa-stack-2x"></i>
-                                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="small foot-copyright text-center">
-                        Copyright &copy; 2025 Wen Research Group. All Rights Reserved.
-                    </div>
-                </div>
-                <div class="small col-lg-4 my-3 my-lg-0 mb-2">
-                    <p class="left-align">
-                        <font style="color:var(--bs-black)">
-                            Office: N1-1b-43, <a
-                                href="https://www.google.com/maps/place/School+of+Civil+and+Environmental+Engineering+(CEE)/@1.345724,103.680237,15z/data=!4m6!3m5!1s0x31da0f752e339a5d:0x4f2f29417633181b!8m2!3d1.3457239!4d103.6802366!16s%2Fg%2F11bw_5t7s0?hl=en&entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D">
-                                <font style="color:var(--bs-black)">Google Map</font>
-                            </a><br>
-                            Phone: +65 1234 5678 <br>
-                            Email: wen.zhou[at]ntu.edu.sg <br>
-                        </font>
-                    </p>
-                </div>
+    <footer class="bg-custom-blue py-4">
+        <div class="container">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gy-3">
+            
+            <!-- Logo 左侧 -->
+            <div class="text-md-start">
+            <img class="img-fluid" src="assets/img/pages-img/logo-footer.png" alt="Lab Logo" style="max-height: 80px;" />
             </div>
+
+            <!-- 文字右侧 -->
+            <div class="text-white text-center text-md-end">
+            <div style="font-size: 1.05rem; font-weight: 600; margin-bottom: 5px;">Materials and Construction Lab</div>
+            <div class="small opacity-75">© 2025 MatXCon Lab. All Rights Reserved.</div>
+            </div>
+
+        </div>
         </div>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    </div> <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 </body>
 
 </html>
