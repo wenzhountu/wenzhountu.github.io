@@ -2,7 +2,7 @@
 
 Welcome to the **Materials X Construction Lab (MetXCon Lab)** at Nanyang Technological University (NTU)!  
 
-We are officially launched and building a dynamic, interdisciplinary team focused on advancing sustainable construction materials, experimental geomechanics, and innovative infrastructure solutions.
+We are officially launched and working at the intersection of multiscale materials research, intentional design, and construction technologies, aiming to enable efficient, resilient, and sustainable pathways towards next-generation construction.
 
 ## Join Us!
 
@@ -13,7 +13,7 @@ We are actively seeking motivated individuals at all levels to join our research
 - **Research Assistants**
 - **Visiting Scholars**
 
-If you are passionate about materials science, geotechnical engineering, sustainable construction, or related fields—and eager to work on real-world, impactful projects—we’d love to hear from you!
+If you are interested in our research, we’d love to hear from you!
 
 ## Get in Touch
 
